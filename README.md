@@ -1,3 +1,14 @@
+## Full Report Document
+see [thesisFinalReport.pdf](/thesisFinalReport.pdf)
+
+
+## (BLF) Blockchain-Logging-Framework
+1. Git clone the code of BLF at https://github.com/TU-ADSP/Blockchain-Logging-Framework
+2. follow the steps and run the BLF.
+3. there's test query "test.bcql" provide inside the "Blockchain-Logging-Framework" folder.
+4. E.g. Running `java -jar target/blf-cmd.jar extract /Users/shenghangao/Documents/UNSW/21T1/COMP4952/Blockchain-Logging-Framework/src/main/resources/test.bcql` 
+* Noticed, if using Ganache application, need to combined ganache-cli to provided websocket, E.g. after running Ganache application, running `ganache-cli -p 8545 -f http://localhost:7545`, so that fork the data and then runing demo network while using Truffle.
+
 ## (GETH) How to set up private Ethereum Network
 Set up local Ethereum Network step by step, see the link provided. In the folder "testGeth", there's 3 accounts and the Ethereum Network has been set up.
 1. `cd testGeth`
@@ -34,12 +45,6 @@ After the ethereum network has been running, changes the port in "truffle-config
 5. Then you can interact with the smart contract, deploy, sendTransaction, etc. There's several commands may be helpful inside the help.txt file under the "smart-contract" folder.
 9. ref: https://hackernoon.com/ethereum-development-walkthrough-part-2-truffle-ganache-geth-and-mist-8d6320e12269
 
-## (BLF) Blockchain-Logging-Framework
-1. Git clone the code of BLF at https://github.com/TU-ADSP/Blockchain-Logging-Framework
-2. follow the steps and run the BLF.
-3. there's test query "test.bcql" provide inside the "Blockchain-Logging-Framework" folder.
-4. E.g. Running `java -jar target/blf-cmd.jar extract /Users/shenghangao/Documents/UNSW/21T1/COMP4952/Blockchain-Logging-Framework/src/main/resources/test.bcql` 
-* Noticed, if using Ganache application, need to combined ganache-cli to provided websocket, E.g. after running Ganache application, running `ganache-cli -p 8545 -f http://localhost:7545`, so that fork the data and then runing demo network while using Truffle.
 
 ## How to run the Backend/API
 1. In your terminal, navigate to the `cd interface` and `cd backend` directory.
