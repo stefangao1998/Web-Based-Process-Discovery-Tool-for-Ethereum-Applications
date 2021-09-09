@@ -1,0 +1,133 @@
+.fieldArea {
+  width: 70%;
+  height: 56px;
+  border-radius: 4px;
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.813); /*rgba(132, 80, 244, 0.266);*/
+  transition: 0.3s background-color ease-in-out, 0.3s box-shadow ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.fieldArea:hover {
+  background-color: rgba(255, 255, 255, 0.45); /*#522da87aa*/
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.05);
+}
+
+.fieldArea.active {
+  background-color: #ffffff;
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+.fieldArea.active textarea {
+  padding: 24px 16px 8px 16px;
+}
+
+.fieldArea.active textarea + label {
+  top: 4px;
+  opacity: 1;
+  color: #512da8; /*2824fb*/
+}
+
+.fieldArea.locked {
+  pointer-events: none;
+}
+
+.fieldArea textarea {
+  width: 100%;
+  height: 56px;
+  position: relative;
+  padding: 0px 16px;
+  border: none;
+  border-radius: 4px;
+  font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+  background-color: transparent;
+  color: #282828;
+  outline: none;
+  box-shadow: 0px 4px 20px 0px transparent;
+  transition: 0.3s background-color ease-in-out, 0.3s box-shadow ease-in-out,
+    0.1s padding ease-in-out;
+  -webkit-appearance: none;
+}
+
+.fieldArea textarea::-webkit-input-placeholder {
+  color: #522da8ae;
+}
+.fieldArea.active textarea::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}
+/* .fieldArea input::-moz-placeholder {
+  color: rgba(51, 147, 67, 0.8);
+}
+.fieldArea input:-ms-input-placeholder {
+  color: rgba(34, 66, 248, 0.8);
+}
+.fieldArea input:-moz-placeholder {
+  color: rgba(211, 46, 226, 0.8);
+} */
+
+.fieldArea textarea + label {
+  position: absolute;
+  top: 24px;
+  left: 16px;
+  font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 24px;
+  color: #ffffff;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.1s all ease-in-out;
+}
+
+.fieldArea textarea + label.error {
+  color: #ec392f;
+}
+
+.fieldArea p.predicted {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #e0e0e0;
+  opacity: 1;
+  pointer-events: none;
+}
+
+.touchableOpacity {
+  width: 200px;
+  height: 46px;
+  border-radius: 8px;
+  position: relative;
+  background-color: #673ab7;
+  transition: 0.3s background-color ease-in-out, 0.3s box-shadow ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}

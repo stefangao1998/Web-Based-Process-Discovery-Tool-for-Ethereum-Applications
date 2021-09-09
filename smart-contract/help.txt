@@ -1,0 +1,26 @@
+TRUFFLE:
+	ganache-cli -p 7545
+	truffle compile
+	truffle migrate --network test	// test is the nertwok name configured in the truffle-config file
+	truffle console --network test
+		let block = await web3.eth.getBlock("latest")
+		let accounts = await web3.eth.getAccounts()
+		  deploy new contract: 
+			let newInstance = await MetaCoin.new()
+
+		  exist deployed contract:
+			let instance = await MetaCoin.deployed()
+			let result = await instance.sendCoin(accounts[1], 10, {from: accounts[0]})
+			let balance = await instance.getBalance(accounts[0])
+			balance.toNumber()
+			result.logs[0]
+			instance.address
+			let pastEvents = await instance.getPastEvents( 'Transfer', { fromBlock: 0, toBlock: 'latest' } )
+
+		wrestling:
+		Wrestling.deployed().then(inst => { WrestlingInstance = inst })
+		WrestlingInstance.wrestler1.call()
+		WrestlingInstance.registerAsAnOpponent({from: accounts[1]})
+		WrestlingInstance.wrestler2.call()
+		WrestlingInstance.wrestle({from: accounts[0], value: 1})
+		WrestlingInstance.wrestle({from: accounts[1], value: 3})
