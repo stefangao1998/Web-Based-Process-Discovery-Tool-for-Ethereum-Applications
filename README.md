@@ -1,5 +1,6 @@
 ## Full Report Document
-see [thesisFinalReport.pdf](/thesisFinalReport.pdf)
+1. [thesisFinalReport.pdf](/thesisFinalReport.pdf)
+2. see [seminar_slides.pdf](/seminar_slides.pdf)
 
 
 ## (BLF) Blockchain-Logging-Framework
