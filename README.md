@@ -1,6 +1,7 @@
 ## Full Report Document
 1. [thesisFinalReport.pdf](/thesisFinalReport.pdf)
 2. see [seminar_slides.pdf](/seminar_slides.pdf)
+3. [Introduction Youtueb Video](https://www.youtube.com/watch?v=Ah7zvOTya9E&t=13s)
 
 
 ## (BLF) Blockchain-Logging-Framework
